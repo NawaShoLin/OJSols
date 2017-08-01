@@ -1,0 +1,2 @@
+SELECT W1.Id FROM Weather AS W1, Weather AS W2
+WHERE SUBDATE(W1.Date, 1) = W2.Date AND W1.Temperature > W2.Temperature;
